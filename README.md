@@ -4,7 +4,7 @@ This repository contains a minimal reproducible example that demonstrates a bug 
 
 ## Bug Description
 
-The issue arises when using the `chrome.identity.launchWebAuthFlow` API to redirect users to an external authentication server. If the credentials entered by the user are invalid, the server returns an error page (HTTP 401). However, instead of displaying the error page in the authentication pop-up window, the window closes unexpectedly.
+The issue arises when using the `chrome.identity.launchWebAuthFlow` and authentication server uses HTML Form Handling (Server-Side Handling). If the credentials entered by the user are invalid, the server returns an error page (HTTP 401). However, instead of displaying the error page in the authentication pop-up window, the window closes unexpectedly.
 
 This behavior is problematic because:
 - The user cannot see why their login attempt failed.
