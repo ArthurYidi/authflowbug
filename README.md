@@ -73,6 +73,18 @@ This behavior is problematic because:
 
 When invalid credentials are entered, the error page should be displayed in the `launchWebAuthFlow` pop-up window so that users can retry their login attempt or understand why it failed.
 
+**Expected page:**
+
+<img width="255" alt="Screenshot 2024-12-10 at 4 09 29 PM" src="https://github.com/user-attachments/assets/353b45b7-9ba7-46ed-b70c-4ad62734af51">
+
 ## Actual Behavior
 
 The `launchWebAuthFlow` pop-up window closes abruptly when invalid credentials are entered, leaving users without feedback on their failed login attempt.
+
+## Example Video
+
+https://github.com/user-attachments/assets/fc0d7a33-9dbd-4747-a579-e349a6af0b1c
+
+
+
+
