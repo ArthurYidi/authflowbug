@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Auth Flow Bug",
+  "version": "1.0",
+  "options_page": "option.html",
+  "background": {
+    "service_worker": "serviceWorker.js"
+  },
+  "permissions": ["storage", "activeTab", "identity", "tabs"]
+}
