@@ -14,12 +14,12 @@ This behavior is problematic because:
 
 ```
 ├── authServer/
-│   └── server.js        # A simple HTTP server that simulates an authentication flow
+│   └── server.js        # A simple HTTP HTML Form Handling server that simulates an authentication flow
 ├── extension/
 │   ├── manifest.json    # Chrome extension manifest file
-│   ├── option.html      # Extension options page
-│   ├── option.js        # Options page JavaScript logic
-│   └── serviceWorker.js # Background script for the extension
+│   ├── option.html      # Extension options page with Sign in
+│   ├── option.js        # JavaScript logic to create a launchWebAuthFlow
+│   └── serviceWorker.js # Opens option page when extension is installed
 ```
 
 ### Components
