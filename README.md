@@ -31,7 +31,7 @@ This behavior is problematic because:
    - **Client Logic (`extension/option.js`)**: Uses `chrome.identity.launchWebAuthFlow` to open the authentication window.
    - **Service Worker (`extension/serviceWorker.js`)**: Opens the options page when the extension is installed.
 
-### Requirements
+## Requirements
 
 To use this project, you need the following dependencies installed:
 - **Node.js**: Version 22.x
