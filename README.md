@@ -13,8 +13,7 @@ This behavior is problematic because:
 ## Repository Structure
 
 ```
-├── authServer/
-│   └── server.js        # A simple HTTP HTML Form Handling server that simulates an authentication flow
+├── server.js            # A simple HTTP HTML Form Handling server that simulates an authentication flow
 ├── extension/
 │   ├── manifest.json    # Chrome extension manifest file
 │   ├── option.html      # Extension options page with Sign in
@@ -24,13 +23,18 @@ This behavior is problematic because:
 
 ### Components
 
-1. **Authentication Server (`authServer/server.js`)**:  
+1. **Authentication Server (`server.js`)**:  
    A simple Node.js server that serves an HTML login form and processes authentication requests. It redirects to a success URL for valid credentials or displays an error page for invalid credentials.
 
 2. **Chrome Extension**:  
    - **Options Page (`extension/option.html`)**: Contains a button to initiate the authentication flow.
    - **Client Logic (`extension/option.js`)**: Uses `chrome.identity.launchWebAuthFlow` to open the authentication window.
    - **Service Worker (`extension/serviceWorker.js`)**: Opens the options page when the extension is installed.
+
+### Requirements
+
+To use this project, you need the following dependencies installed:
+- **Node.js**: Version 22.x
 
 ## Steps to Reproduce
 
@@ -42,8 +46,7 @@ This behavior is problematic because:
 
 2. Install and run the authentication server:
    ```bash
-   cd authServer
-   node authServer/server.js
+   npm run start
    ```
    The server will start at `http://localhost:3000`.
 

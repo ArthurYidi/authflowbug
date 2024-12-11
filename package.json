@@ -1,0 +1,14 @@
+{
+  "name": "authflowbug",
+  "version": "1.0.0",
+  "description": "This repository contains a minimal reproducible example that demonstrates a bug in Chrome's `chrome.identity.launchWebAuthFlow` API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "author": "Arthur Yidi",
+  "license": "MIT"
+}
