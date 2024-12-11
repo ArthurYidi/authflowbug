@@ -40,7 +40,7 @@ To use this project, you need the following dependencies installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/authflowbug.git
+   git clone https://github.com/ArthurYidi/authflowbug.git
    cd authflowbug
    ```
 
